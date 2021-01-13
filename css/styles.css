@@ -14,7 +14,7 @@ body {
 
 .nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     width: 600px;
 }
@@ -54,6 +54,29 @@ body {
 .main .text {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.main .mobile-banner {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    transform-origin: left top;
+    /* 29.3% based on distance after rotation: 100 - 100sin(45) */
+    transform: translateY(100%) translateX(29.3%) rotate(-45deg);
+
+    padding: 10px 3rem;
+    background-color: rgba(83, 51, 255, 0.1);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 450px) {
+    .main .mobile-banner {
+        display: block;
+    }
 }
 
 .avatar {
