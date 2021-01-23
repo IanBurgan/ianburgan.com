@@ -9,7 +9,7 @@ body {
 
     height: 3.5rem;
     color: white;
-    background-color: #5333FF;
+    background-color: #9013FE;
 }
 
 .nav ul {
@@ -67,7 +67,8 @@ body {
     transform: translateY(100%) translateX(29.3%) rotate(-45deg);
 
     padding: 10px 3rem;
-    background-color: rgba(83, 51, 255, 0.1);
+    background-color: rgba(144, 19, 254, 0.1);
+
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
